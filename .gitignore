@@ -1,0 +1,8 @@
+.mps/workspace.xml
+languages/*/classes_gen
+languages/*/source_gen
+languages/*/source_gen.caches
+languages/*/generator/classes_gen
+languages/*/generator/source_gen
+languages/*/generator/source_gen.caches
+
