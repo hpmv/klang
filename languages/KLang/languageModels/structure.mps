@@ -112,7 +112,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7186792080057677317" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="KVarRef" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7186792080057677204" resolveInfo="KExpr" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7186792080057677318" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -160,7 +160,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7186792080058708402" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin.arith" />
     <property name="name" nameId="tpck.1169194664001" value="KMulExpr" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="+" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="*" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7186792080058590150" resolveInfo="KArithExpr" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7186792080058708410" nodeInfo="ig">
@@ -449,6 +449,9 @@
       <property name="role" nameId="tpce.1071599776563" value="stmt" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="7186792080058935419" resolveInfo="KStmt" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8402241218901366118" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.3734116213129792499" resolveInfo="ScopeProvider" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7186792080059189194" nodeInfo="ig">
@@ -761,6 +764,88 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6811099674943424797" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7186792080061302332" resolveInfo="KClassMember" />
     </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8402241218901046966" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin" />
+    <property name="name" nameId="tpck.1169194664001" value="KBaseAssignExpr" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7186792080058583666" resolveInfo="KBinExpr" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8402241218901046969" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin.assign" />
+    <property name="name" nameId="tpck.1169194664001" value="KOpAssignExpr" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8402241218901046966" resolveInfo="KBaseAssignExpr" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8402241218901047129" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin.assign" />
+    <property name="name" nameId="tpck.1169194664001" value="KAssignExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="=" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8402241218901046966" resolveInfo="KBaseAssignExpr" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8402241218901047132" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin.assign.op" />
+    <property name="name" nameId="tpck.1169194664001" value="KAddAssignExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="+=" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8402241218901046969" resolveInfo="KOpAssignExpr" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8402241218901047141" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin.assign.op" />
+    <property name="name" nameId="tpck.1169194664001" value="KSubAssignExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="-=" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8402241218901046969" resolveInfo="KOpAssignExpr" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8402241218901047145" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin.assign.op" />
+    <property name="name" nameId="tpck.1169194664001" value="KMulAssignExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="*=" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8402241218901046969" resolveInfo="KOpAssignExpr" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8402241218901047304" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin.assign.op" />
+    <property name="name" nameId="tpck.1169194664001" value="KDivAssignExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="/=" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8402241218901046969" resolveInfo="KOpAssignExpr" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8402241218901047308" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin.assign.op" />
+    <property name="name" nameId="tpck.1169194664001" value="KModAssignExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="%=" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8402241218901046969" resolveInfo="KOpAssignExpr" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8402241218901047311" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin.assign.op" />
+    <property name="name" nameId="tpck.1169194664001" value="KAndAssignExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&amp;=" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8402241218901046969" resolveInfo="KOpAssignExpr" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8402241218901047314" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin.assign.op" />
+    <property name="name" nameId="tpck.1169194664001" value="KOrAssignExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="|=" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8402241218901046969" resolveInfo="KOpAssignExpr" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8402241218901047319" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin.assign.op" />
+    <property name="name" nameId="tpck.1169194664001" value="KXorAssignExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="xor=" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8402241218901046969" resolveInfo="KOpAssignExpr" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8402241218901047484" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin.assign.op" />
+    <property name="name" nameId="tpck.1169194664001" value="KShiftLeftAssignExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;&lt;=" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8402241218901046969" resolveInfo="KOpAssignExpr" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8402241218901047489" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin.assign.op" />
+    <property name="name" nameId="tpck.1169194664001" value="KShiftRightAssignExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&gt;&gt;=" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8402241218901046969" resolveInfo="KOpAssignExpr" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8402241218901047493" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kExpr.bin.assign.op" />
+    <property name="name" nameId="tpck.1169194664001" value="KShiftRightUnsignedAssignExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&gt;&gt;&gt;=" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8402241218901046969" resolveInfo="KOpAssignExpr" />
   </root>
 </model>
 
