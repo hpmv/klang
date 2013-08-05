@@ -99,6 +99,97 @@
         <property name="name" nameId="tpck.1169194664001" value="T" />
       </node>
     </node>
+    <node role="root" roleId="kxga.7186792080061303320" type="kxga.KPlaceholderRoot" typeId="kxga.6811099674943404881" id="8402241218907924962" nodeInfo="ng" />
+    <node role="root" roleId="kxga.7186792080061303320" type="kxga.KTraitTypeDecl" typeId="kxga.8402241218907284142" id="8402241218907925045" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="iterable" />
+      <node role="templateType" roleId="kxga.8402241218903703555" type="kxga.KTemplateAnyTypeDecl" typeId="kxga.8402241218903701785" id="8402241218907925093" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Element" />
+      </node>
+      <node role="satisfiedBy" roleId="kxga.8402241218907284750" type="kxga.KArrayType" typeId="kxga.8402241218907585684" id="3758043149215258398" nodeInfo="ng">
+        <node role="elementType" roleId="kxga.8402241218907585736" type="kxga.KTypeRef" typeId="kxga.7186792080060709003" id="3758043149215258396" nodeInfo="ng">
+          <link role="decl" roleId="kxga.7186792080060709029" targetNodeId="8402241218907925093" resolveInfo="Element" />
+        </node>
+      </node>
+    </node>
+    <node role="root" roleId="kxga.7186792080061303320" type="kxga.KPlaceholderRoot" typeId="kxga.6811099674943404881" id="3758043149217376009" nodeInfo="ng" />
+    <node role="root" roleId="kxga.7186792080061303320" type="kxga.KAlgoDecl" typeId="kxga.3758043149216555079" id="3758043149217376102" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="simple dfs" />
+      <node role="insertions" roleId="kxga.3758043149216555034" type="kxga.KAlgoInsertionDecl" typeId="kxga.3758043149216438937" id="3758043149217376181" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="neighbours" />
+        <property name="description" nameId="kxga.3758043149216438942" value="Call for each neighbour" />
+        <property name="isRequired" nameId="kxga.3758043149216438940" value="true" />
+        <property name="scope" nameId="kxga.3758043149216523208" value="INSTANCE_METHOD" />
+        <node role="param" roleId="kxga.3758043149216438951" type="kxga.KInsertionParamDecl" typeId="kxga.3758043149216438959" id="3758043149217376183" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="v" />
+          <node role="type" roleId="kxga.3758043149216438960" type="kxga.KTypeRef" typeId="kxga.7186792080060709003" id="3758043149217376187" nodeInfo="ng">
+            <link role="decl" roleId="kxga.7186792080060709029" targetNodeId="3758043149217376158" resolveInfo="Vertex" />
+          </node>
+        </node>
+        <node role="callback" roleId="kxga.3758043149216439526" type="kxga.KInsertionCallbackDecl" typeId="kxga.3758043149216439024" id="3758043149218441174" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="callback" />
+          <node role="paramType" roleId="kxga.3758043149216439027" type="kxga.KTypeRef" typeId="kxga.7186792080060709003" id="3758043149218441176" nodeInfo="ng">
+            <link role="decl" roleId="kxga.7186792080060709029" targetNodeId="3758043149217376158" resolveInfo="Vertex" />
+          </node>
+        </node>
+      </node>
+      <node role="insertions" roleId="kxga.3758043149216555034" type="kxga.KAlgoInsertionDecl" typeId="kxga.3758043149216438937" id="3758043149218441235" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="mark visited" />
+        <property name="scope" nameId="kxga.3758043149216523208" value="INSTANCE_METHOD" />
+        <property name="description" nameId="kxga.3758043149216438942" value="Mark vertex as visited" />
+        <node role="param" roleId="kxga.3758043149216438951" type="kxga.KInsertionParamDecl" typeId="kxga.3758043149216438959" id="3758043149218441242" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="v" />
+          <node role="type" roleId="kxga.3758043149216438960" type="kxga.KTypeRef" typeId="kxga.7186792080060709003" id="3758043149218441246" nodeInfo="ng">
+            <link role="decl" roleId="kxga.7186792080060709029" targetNodeId="3758043149217376158" resolveInfo="Vertex" />
+          </node>
+        </node>
+      </node>
+      <node role="insertions" roleId="kxga.3758043149216555034" type="kxga.KAlgoInsertionDecl" typeId="kxga.3758043149216438937" id="3758043149218441248" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="is visited" />
+        <property name="scope" nameId="kxga.3758043149216523208" value="INSTANCE_METHOD" />
+        <property name="description" nameId="kxga.3758043149216438942" value="Is vertex visited" />
+        <node role="param" roleId="kxga.3758043149216438951" type="kxga.KInsertionParamDecl" typeId="kxga.3758043149216438959" id="3758043149218441258" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="v" />
+          <node role="type" roleId="kxga.3758043149216438960" type="kxga.KTypeRef" typeId="kxga.7186792080060709003" id="3758043149218441262" nodeInfo="ng">
+            <link role="decl" roleId="kxga.7186792080060709029" targetNodeId="3758043149217376158" resolveInfo="Vertex" />
+          </node>
+        </node>
+      </node>
+      <node role="insertions" roleId="kxga.3758043149216555034" type="kxga.KAlgoInsertionDecl" typeId="kxga.3758043149216438937" id="3758043149218441264" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="on visit" />
+        <property name="scope" nameId="kxga.3758043149216523208" value="INSTANCE_METHOD" />
+        <property name="description" nameId="kxga.3758043149216438942" value="Called upon first visiting a vertex" />
+        <node role="param" roleId="kxga.3758043149216438951" type="kxga.KInsertionParamDecl" typeId="kxga.3758043149216438959" id="3758043149218441277" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="v" />
+          <node role="type" roleId="kxga.3758043149216438960" type="kxga.KTypeRef" typeId="kxga.7186792080060709003" id="3758043149218441281" nodeInfo="ng">
+            <link role="decl" roleId="kxga.7186792080060709029" targetNodeId="3758043149217376158" resolveInfo="Vertex" />
+          </node>
+        </node>
+      </node>
+      <node role="insertions" roleId="kxga.3758043149216555034" type="kxga.KAlgoInsertionDecl" typeId="kxga.3758043149216438937" id="3758043149218441283" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="on finish" />
+        <property name="scope" nameId="kxga.3758043149216523208" value="INSTANCE_METHOD" />
+        <property name="description" nameId="kxga.3758043149216438942" value="Called when a vertex is completed" />
+        <node role="param" roleId="kxga.3758043149216438951" type="kxga.KInsertionParamDecl" typeId="kxga.3758043149216438959" id="3758043149218441299" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="v" />
+          <node role="type" roleId="kxga.3758043149216438960" type="kxga.KTypeRef" typeId="kxga.7186792080060709003" id="3758043149218441303" nodeInfo="ng">
+            <link role="decl" roleId="kxga.7186792080060709029" targetNodeId="3758043149217376158" resolveInfo="Vertex" />
+          </node>
+        </node>
+      </node>
+      <node role="connections" roleId="kxga.3758043149216555032" type="kxga.KAlgoConnectionDecl" typeId="kxga.3758043149216390823" id="3758043149217376161" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="start" />
+        <property name="description" nameId="kxga.3758043149216390834" value="The starting vertex" />
+        <node role="type" roleId="kxga.3758043149216390832" type="kxga.KTypeRef" typeId="kxga.7186792080060709003" id="3758043149217376165" nodeInfo="ng">
+          <link role="decl" roleId="kxga.7186792080060709029" targetNodeId="3758043149217376158" resolveInfo="Vertex" />
+        </node>
+      </node>
+      <node role="procedure" roleId="kxga.3758043149216555080" type="kxga.KStmtList" typeId="kxga.7186792080059188918" id="3758043149217376104" nodeInfo="ng">
+        <node role="stmt" roleId="kxga.7186792080059188919" type="kxga.KStmt" typeId="kxga.7186792080058935419" id="3758043149217376106" nodeInfo="ng" />
+      </node>
+      <node role="templateType" roleId="kxga.8402241218903703555" type="kxga.KTemplateAnyTypeDecl" typeId="kxga.8402241218903701785" id="3758043149217376158" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Vertex" />
+      </node>
+    </node>
   </root>
 </model>
 
