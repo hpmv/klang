@@ -15,45 +15,6 @@
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7186792080060797419" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="kFuncDecl" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="kxga.7186792080061028694" resolveInfo="KStaticMemberFuncDecl" />
-    <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="7186792080060797471" nodeInfo="ng">
-      <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="kxga.7186792080061092784" resolveInfo="isAbstract" />
-      <node role="propertyValidator" roleId="tp1t.1212097481299" type="tp1t.ConstraintFunction_PropertyValidator" typeId="tp1t.1212096972063" id="7186792080061132105" nodeInfo="nn">
-        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7186792080061132106" nodeInfo="sn">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7186792080061132910" nodeInfo="nn">
-            <node role="expression" roleId="tpee.1068580123156" type="tpee.NotExpression" typeId="tpee.1081516740877" id="7186792080061150021" nodeInfo="nn">
-              <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7186792080061150023" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintsFunctionParameter_node" typeId="tp1t.1147468365020" id="7186792080061150024" nodeInfo="nn" />
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="7186792080061150025" nodeInfo="nn">
-                  <link role="property" roleId="tp25.1138056395725" targetNodeId="kxga.7186792080061092784" resolveInfo="isAbstract" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7186792080061092809" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="kFuncDecl" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="kxga.7186792080061029749" resolveInfo="KMemberFuncDecl" />
-    <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="7186792080061092810" nodeInfo="ng">
-      <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="kxga.7186792080061092784" resolveInfo="isAbstract" />
-      <node role="propertyGetter" roleId="tp1t.1147468630220" type="tp1t.ConstraintFunction_PropertyGetter" typeId="tp1t.1147467790433" id="7186792080061092812" nodeInfo="nn">
-        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7186792080061092813" nodeInfo="sn">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7186792080061093623" nodeInfo="nn">
-            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7186792080061108102" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7186792080061094229" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintsFunctionParameter_node" typeId="tp1t.1147468365020" id="7186792080061093622" nodeInfo="nn" />
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7186792080061107747" nodeInfo="nn">
-                  <link role="link" roleId="tp25.1138056516764" targetNodeId="kxga.7186792080061029759" />
-                </node>
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsNullOperation" typeId="tp25.1171999116870" id="7186792080061113875" nodeInfo="nn" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7186792080061306116" nodeInfo="ng">
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="kxga.7186792080061303046" resolveInfo="KFile" />
@@ -163,6 +124,27 @@
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dendsWith(java%dlang%dString)%cboolean" resolveInfo="endsWith" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4653407572359812770" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="f" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4653407572368696640" nodeInfo="ng">
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="kxga.7186792080057677066" resolveInfo="IIdentifier" />
+    <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="4653407572368696692" nodeInfo="ng">
+      <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+      <node role="propertyValidator" roleId="tp1t.1212097481299" type="tp1t.ConstraintFunction_PropertyValidator" typeId="tp1t.1212096972063" id="4653407572368696694" nodeInfo="nn">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4653407572368696695" nodeInfo="sn">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4653407572368697494" nodeInfo="nn">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4653407572368711272" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintsFunctionParameter_propertyValue" typeId="tp1t.1153138554286" id="4653407572368708839" nodeInfo="nn" />
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4653407572368725280" nodeInfo="nn">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dmatches(java%dlang%dString)%cboolean" resolveInfo="matches" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4653407572368726160" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="[a-zA-Z_][a-zA-Z0-9_]*" />
                 </node>
               </node>
             </node>
