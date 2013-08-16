@@ -303,12 +303,23 @@
       </node>
     </node>
   </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3845071462853471876" nodeInfo="ng">
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="kxga.7186792080060709003" resolveInfo="KTypeRef" />
-    <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="3845071462853471928" nodeInfo="ng">
-      <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="kxga.7186792080060709029" />
-      <node role="searchScopeFactory" roleId="tp1t.1148687345559" type="tp1t.InheritedNodeScopeFactory" typeId="tp1t.8401916545537438642" id="3845071462853471931" nodeInfo="ng">
-        <link role="kind" roleId="tp1t.8401916545537438643" targetNodeId="kxga.7186792080060708994" resolveInfo="KTypeDecl" />
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2830741014764135692" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kType" />
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="kxga.3845071462882401446" resolveInfo="KTemplateType" />
+    <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="2830741014764135693" nodeInfo="ng">
+      <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="kxga.3845071462882401447" />
+      <node role="searchScopeFactory" roleId="tp1t.1148687345559" type="tp1t.InheritedNodeScopeFactory" typeId="tp1t.8401916545537438642" id="2830741014764135695" nodeInfo="ng">
+        <link role="kind" roleId="tp1t.8401916545537438643" targetNodeId="kxga.8402241218903700347" resolveInfo="KTemplateTypeDecl" />
+      </node>
+    </node>
+  </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2830741014764135720" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kType" />
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="kxga.3845071462880165951" resolveInfo="KClassType" />
+    <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="2830741014764135721" nodeInfo="ng">
+      <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="kxga.3845071462880166264" />
+      <node role="searchScopeFactory" roleId="tp1t.1148687345559" type="tp1t.InheritedNodeScopeFactory" typeId="tp1t.8401916545537438642" id="2830741014764135723" nodeInfo="ng">
+        <link role="kind" roleId="tp1t.8401916545537438643" targetNodeId="kxga.8402241218903689687" resolveInfo="KClassLikeTypeDecl" />
       </node>
     </node>
   </root>
