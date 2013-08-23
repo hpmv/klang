@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:7a49747d-a1b8-4ace-88c3-8a6573f9398c(KLang.structure)" version="0">
+<model modelUID="r:7a49747d-a1b8-4ace-88c3-8a6573f9398c(KLang.structure)" version="1">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="kxga" modelUID="r:7a49747d-a1b8-4ace-88c3-8a6573f9398c(KLang.structure)" version="0" implicit="yes" />
+  <import index="kxga" modelUID="r:7a49747d-a1b8-4ace-88c3-8a6573f9398c(KLang.structure)" version="1" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2423621389433994101" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="KType" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
@@ -821,9 +821,14 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7186792080060708994" resolveInfo="KTypeDecl" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4161765180564250831" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="constraint" />
+      <property name="role" nameId="tpce.1071599776563" value="trait" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="3845071462849624189" resolveInfo="KTraitRef" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9011524070498364559" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="superclass" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="3845071462880165951" resolveInfo="KClassType" />
     </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8402241218903703554" nodeInfo="ig">
@@ -871,7 +876,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3758043149216389247" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="KBaseAlgoDecl" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.block" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3758043149216555032" nodeInfo="ig">
@@ -892,10 +897,13 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3758043149216967823" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7186792080061302909" resolveInfo="KRoot" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9011524070493956654" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="9011524070493953178" resolveInfo="INonCodeIdentifier" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3758043149216390823" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="KAlgoConnectionDecl" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.block" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7186792080057677033" resolveInfo="KVarDecl" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3758043149216390826" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="isOut" />
@@ -910,7 +918,7 @@
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3758043149216438937" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.block" />
     <property name="name" nameId="tpck.1169194664001" value="KAlgoInsertionDecl" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3758043149216438951" nodeInfo="ig">
@@ -942,7 +950,7 @@
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3758043149216438959" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.block" />
     <property name="name" nameId="tpck.1169194664001" value="KInsertionParamDecl" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7186792080057677033" resolveInfo="KVarDecl" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3758043149216438960" nodeInfo="ig">
@@ -953,7 +961,7 @@
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3758043149216439024" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.block" />
     <property name="name" nameId="tpck.1169194664001" value="KInsertionCallbackDecl" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3758043149216439027" nodeInfo="ig">
@@ -971,13 +979,13 @@
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3758043149216555072" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.block" />
     <property name="name" nameId="tpck.1169194664001" value="KInterfaceAlgoDecl" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="interface algorithm" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3758043149216389247" resolveInfo="KBaseAlgoDecl" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3758043149216555079" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.block" />
     <property name="name" nameId="tpck.1169194664001" value="KAlgoDecl" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="algorithm" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3758043149216389247" resolveInfo="KBaseAlgoDecl" />
@@ -986,6 +994,11 @@
       <property name="role" nameId="tpce.1071599776563" value="procedure" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="7186792080059188918" resolveInfo="KStmtList" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9011524070491516182" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="interface" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="9011524070491516145" resolveInfo="KInterfaceAlgoRef" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3845071462852753933" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8402241218903703554" resolveInfo="ITemplatedDecl" />
@@ -1041,7 +1054,7 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4653407572359990691" resolveInfo="KBitBinExpr" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4653407572361168961" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.block" />
     <property name="name" nameId="tpck.1169194664001" value="KInsertionInvocationStmt" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7186792080058935419" resolveInfo="KStmt" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4653407572361169177" nodeInfo="ig">
@@ -1064,7 +1077,7 @@
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4653407572361169184" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.block" />
     <property name="name" nameId="tpck.1169194664001" value="KCallbackExpr" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7186792080057677204" resolveInfo="KExpr" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4653407572361169187" nodeInfo="ig">
@@ -1142,11 +1155,8 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="kVarDecl" />
     <property name="name" nameId="tpck.1169194664001" value="KExplicitLocalVarDecl" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7186792080057677073" resolveInfo="KLocalVarDecl" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4653407572367467834" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="type" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2423621389433994101" resolveInfo="KType" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7911539744506600010" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4653407572359933487" resolveInfo="ITypedVarDecl" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4653407572370049897" nodeInfo="ig">
@@ -1159,11 +1169,8 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="7186792080060709820" resolveInfo="KNamedFuncDecl" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4653407572370049900" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="arg" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7186792080057677204" resolveInfo="KExpr" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9011524070489249219" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="9011524070489241678" resolveInfo="KFuncCall" />
     </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3845071462849156797" nodeInfo="ig">
@@ -1212,7 +1219,7 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3845071462866073555" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.block" />
     <property name="name" nameId="tpck.1169194664001" value="KCallbackParamDecl" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7186792080060707461" resolveInfo="KParamVarDecl" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3845071462866073976" nodeInfo="ig">
@@ -1299,6 +1306,136 @@
     <property name="name" nameId="tpck.1169194664001" value="KThisType" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="this" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2423621389433994101" resolveInfo="KType" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7911539744512921716" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.expr" />
+    <property name="name" nameId="tpck.1169194664001" value="KBaseExprAlgoDecl" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7911539744512921772" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="connection" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7911539744512926018" resolveInfo="KExprAlgoConnectionDecl" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7911539744512935899" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="returnType" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="2423621389433994101" resolveInfo="KType" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7911539744512922227" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8402241218903703554" resolveInfo="ITemplatedDecl" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7911539744512922083" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7186792080061302909" resolveInfo="KRoot" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9011524070493956662" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="9011524070493953178" resolveInfo="INonCodeIdentifier" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7911539744512922258" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.expr" />
+    <property name="name" nameId="tpck.1169194664001" value="KExprAlgoDecl" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="expralgo" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7911539744512921716" resolveInfo="KBaseExprAlgoDecl" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7911539744512922259" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="expr" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7186792080057677204" resolveInfo="KExpr" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9011524070491565118" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="interface" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="9011524070491565058" resolveInfo="KInterfaceExprAlgoRef" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7911539744513012663" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8402241218903703554" resolveInfo="ITemplatedDecl" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7911539744512926018" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.expr" />
+    <property name="name" nameId="tpck.1169194664001" value="KExprAlgoConnectionDecl" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7186792080057677033" resolveInfo="KVarDecl" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7911539744512926041" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4653407572359933487" resolveInfo="ITypedVarDecl" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7911539744512939468" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.expr" />
+    <property name="name" nameId="tpck.1169194664001" value="KInterfaceExprAlgoDecl" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="interface expralgo" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7911539744512921716" resolveInfo="KBaseExprAlgoDecl" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9011524070488745483" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="kOperation" />
+    <property name="name" nameId="tpck.1169194664001" value="KMemberFuncCallOp" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3845071462856847298" resolveInfo="KOperation" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9011524070488788388" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="decl" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7186792080061029749" resolveInfo="KMemberFuncDecl" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9011524070489534256" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="9011524070489241678" resolveInfo="KFuncCall" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="9011524070489241678" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="KFuncCall" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9011524070489241679" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="arg" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7186792080057677204" resolveInfo="KExpr" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9011524070491516145" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.block" />
+    <property name="name" nameId="tpck.1169194664001" value="KInterfaceAlgoRef" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9011524070491516146" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="decl" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="3758043149216555072" resolveInfo="KInterfaceAlgoDecl" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9011524070491565058" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.expr" />
+    <property name="name" nameId="tpck.1169194664001" value="KInterfaceExprAlgoRef" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9011524070491565059" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="decl" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7911539744512939468" resolveInfo="KInterfaceExprAlgoDecl" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9011524070491688263" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo.expr" />
+    <property name="name" nameId="tpck.1169194664001" value="KExprAlgoInvocationExpr" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7186792080057677204" resolveInfo="KExpr" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9011524070491688264" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="algo" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7911539744512921716" resolveInfo="KBaseExprAlgoDecl" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9011524070491688266" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="connection" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7186792080057677204" resolveInfo="KExpr" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="9011524070493953178" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="algo" />
+    <property name="name" nameId="tpck.1169194664001" value="INonCodeIdentifier" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9011524070493953192" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
   </root>
 </model>
 

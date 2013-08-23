@@ -8,7 +8,7 @@
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
   <language namespace="3a13115c-633c-4c5c-bbcc-75c4219e9555(jetbrains.mps.lang.quotation)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
-  <import index="kxga" modelUID="r:7a49747d-a1b8-4ace-88c3-8a6573f9398c(KLang.structure)" version="0" />
+  <import index="kxga" modelUID="r:7a49747d-a1b8-4ace-88c3-8a6573f9398c(KLang.structure)" version="1" />
   <import index="jfct" modelUID="r:2913d277-b6e3-45fa-b797-6f1e2a6990ee(KLang.util)" version="-1" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="elhg" modelUID="r:a2b84792-2935-4e67-8fd1-54c00b740671(KLangTestUtils.util)" version="-1" />
@@ -20,6 +20,7 @@
   <import index="tpe3" modelUID="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" version="-1" implicit="yes" />
   <import index="tp3r" modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
+  <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8561790885272485861" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="TestTemplateMatching1" />
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="8561790885272487930" nodeInfo="ng">
@@ -91,7 +92,7 @@
                 <node role="expr" roleId="kxga.7186792080058935474" type="kxga.KLocalVarDeclExpr" typeId="kxga.7186792080061856912" id="8561790885274124570" nodeInfo="ng">
                   <node role="decl" roleId="kxga.7186792080061857071" type="kxga.KExplicitLocalVarDecl" typeId="kxga.4653407572367467782" id="8561790885274124569" nodeInfo="ng">
                     <property name="name" nameId="tpck.1169194664001" value="l" />
-                    <node role="type" roleId="kxga.4653407572367467834" type="kxga.KClassType" typeId="kxga.3845071462880165951" id="8561790885274124568" nodeInfo="ng">
+                    <node role="type" roleId="kxga.4653407572359933488" type="kxga.KClassType" typeId="kxga.3845071462880165951" id="8561790885274124568" nodeInfo="ng">
                       <link role="class" roleId="kxga.3845071462880166264" targetNodeId="2830741014767379505" resolveInfo="TestList" />
                       <node role="typeArg" roleId="kxga.3845071462849156798" type="kxga.KIntType" typeId="kxga.7186792080057675401" id="8561790885274124578" nodeInfo="ng" />
                       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="8561790885274124581" nodeInfo="ng">
@@ -105,7 +106,7 @@
                 <node role="expr" roleId="kxga.7186792080058935474" type="kxga.KLocalVarDeclExpr" typeId="kxga.7186792080061856912" id="8561790885274125107" nodeInfo="ng">
                   <node role="decl" roleId="kxga.7186792080061857071" type="kxga.KExplicitLocalVarDecl" typeId="kxga.4653407572367467782" id="8561790885274125106" nodeInfo="ng">
                     <property name="name" nameId="tpck.1169194664001" value="l2" />
-                    <node role="type" roleId="kxga.4653407572367467834" type="kxga.KClassType" typeId="kxga.3845071462880165951" id="8561790885274125105" nodeInfo="ng">
+                    <node role="type" roleId="kxga.4653407572359933488" type="kxga.KClassType" typeId="kxga.3845071462880165951" id="8561790885274125105" nodeInfo="ng">
                       <link role="class" roleId="kxga.3845071462880166264" targetNodeId="8561790885274124947" resolveInfo="TestInterface" />
                       <node role="typeArg" roleId="kxga.3845071462849156798" type="kxga.KIntType" typeId="kxga.7186792080057675401" id="8561790885274125121" nodeInfo="ng" />
                       <node role="typeArg" roleId="kxga.3845071462849156798" type="kxga.KClassType" typeId="kxga.3845071462880165951" id="8561790885274125142" nodeInfo="ng">
@@ -155,7 +156,7 @@
           </node>
           <node role="templateType" roleId="kxga.8402241218903703555" type="kxga.KTemplateTypeDecl" typeId="kxga.8402241218903700347" id="4161765180566890927" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="Container" />
-            <node role="constraint" roleId="kxga.4161765180564250831" type="kxga.KTraitRef" typeId="kxga.3845071462849624189" id="4161765180566890999" nodeInfo="ng">
+            <node role="trait" roleId="kxga.4161765180564250831" type="kxga.KTraitRef" typeId="kxga.3845071462849624189" id="4161765180566890999" nodeInfo="ng">
               <link role="decl" roleId="kxga.3845071462849624193" targetNodeId="2830741014767379455" resolveInfo="test_iterable" />
               <node role="typeArg" roleId="kxga.3845071462849156798" type="kxga.KTemplateType" typeId="kxga.3845071462882401446" id="4161765180566891005" nodeInfo="ng">
                 <link role="decl" roleId="kxga.3845071462882401447" targetNodeId="4161765180566890196" resolveInfo="TestT2" />
@@ -259,8 +260,8 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8561790885275332144" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="6520792433189540205" nodeInfo="nn">
           <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6581083602205695693" nodeInfo="nn">
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.6581083602201012471" resolveInfo="matchParamList" />
             <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.6160919716004266438" resolveInfo="matchParamList" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6581083602205696614" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6581083602205695694" nodeInfo="nn">
                 <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="8561790885274125004" resolveInfo="TestInterface" />
@@ -507,7 +508,7 @@
           </node>
           <node role="templateType" roleId="kxga.8402241218903703555" type="kxga.KTemplateTypeDecl" typeId="kxga.8402241218903700347" id="4161765180567059176" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="TestT" />
-            <node role="constraint" roleId="kxga.4161765180564250831" type="kxga.KTraitRef" typeId="kxga.3845071462849624189" id="4161765180567060938" nodeInfo="ng">
+            <node role="trait" roleId="kxga.4161765180564250831" type="kxga.KTraitRef" typeId="kxga.3845071462849624189" id="4161765180567060938" nodeInfo="ng">
               <link role="decl" roleId="kxga.3845071462849624193" targetNodeId="6581083602207082948" resolveInfo="comparable" />
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="4161765180567062658" nodeInfo="ng">
@@ -796,7 +797,7 @@
           </node>
           <node role="templateType" roleId="kxga.8402241218903703555" type="kxga.KTemplateTypeDecl" typeId="kxga.8402241218903700347" id="4161765180571096065" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="A" />
-            <node role="constraint" roleId="kxga.4161765180564250831" type="kxga.KTraitRef" typeId="kxga.3845071462849624189" id="4161765180571097292" nodeInfo="ng">
+            <node role="trait" roleId="kxga.4161765180564250831" type="kxga.KTraitRef" typeId="kxga.3845071462849624189" id="4161765180571097292" nodeInfo="ng">
               <link role="decl" roleId="kxga.3845071462849624193" targetNodeId="6581083602207082948" resolveInfo="comparable" />
             </node>
           </node>
@@ -823,7 +824,7 @@
           </node>
           <node role="templateType" roleId="kxga.8402241218903703555" type="kxga.KTemplateTypeDecl" typeId="kxga.8402241218903700347" id="4161765180571096381" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="C" />
-            <node role="constraint" roleId="kxga.4161765180564250831" type="kxga.KTraitRef" typeId="kxga.3845071462849624189" id="4161765180571096389" nodeInfo="ng">
+            <node role="trait" roleId="kxga.4161765180564250831" type="kxga.KTraitRef" typeId="kxga.3845071462849624189" id="4161765180571096389" nodeInfo="ng">
               <link role="decl" roleId="kxga.3845071462849624193" targetNodeId="4161765180571096035" resolveInfo="sortable" />
               <node role="typeArg" roleId="kxga.3845071462849156798" type="kxga.KTemplateType" typeId="kxga.3845071462882401446" id="4161765180571096395" nodeInfo="ng">
                 <link role="decl" roleId="kxga.3845071462882401447" targetNodeId="4161765180571096378" resolveInfo="B" />
@@ -864,6 +865,438 @@
             <node role="typeArg" roleId="kxga.3845071462849156798" type="kxga.KBoolType" typeId="kxga.7186792080057677012" id="7911539744506200961" nodeInfo="ng" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="7911539744506200964" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="List&lt;bool&gt;" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="6160919716006590301" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="TestTemplateMatching4" />
+    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="6160919716006592792" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="testSuperclassMatching" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="6160919716006592793" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6160919716006592797" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="6160919716006610988" nodeInfo="nn">
+          <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6160919716006665847" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580320021" value="1" />
+          </node>
+          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6160919716006615839" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006597592" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.9011524070498474493" resolveInfo="matchSuperclass" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6160919716006598427" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006597832" nodeInfo="nn">
+                  <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593409" resolveInfo="Comparable&lt;int&gt;" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6160919716006608243" nodeInfo="nn">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="kxga.3845071462880166264" />
+                </node>
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006608896" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593389" resolveInfo="Fraction" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetSizeOperation" typeId="tp2q.1162935959151" id="6160919716006665362" nodeInfo="nn" />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tp5g.AssertMatch" typeId="tp5g.1211979288880" id="6160919716006667621" nodeInfo="nn">
+          <node role="before" roleId="tp5g.1211979305365" type="tp2q.ListElementAccessExpression" typeId="tp2q.1225711141656" id="6160919716006674670" nodeInfo="nn">
+            <node role="index" roleId="tp2q.1225711191269" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6160919716006675513" nodeInfo="nn">
+              <property name="value" nameId="tpee.1068580320021" value="0" />
+            </node>
+            <node role="list" roleId="tp2q.1225711182005" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006668228" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.9011524070498474493" resolveInfo="matchSuperclass" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6160919716006668229" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006668230" nodeInfo="nn">
+                  <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593409" resolveInfo="Comparable&lt;int&gt;" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6160919716006668231" nodeInfo="nn">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="kxga.3845071462880166264" />
+                </node>
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006668232" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593389" resolveInfo="Fraction" />
+              </node>
+            </node>
+          </node>
+          <node role="after" roleId="tp5g.1211979322383" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="6160919716006679698" nodeInfo="nn">
+            <node role="leftExpression" roleId="tp25.1145404616321" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006675794" nodeInfo="nn">
+              <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593389" resolveInfo="Fraction" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6160919716006796015" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="6160919716006758757" nodeInfo="nn">
+          <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6160919716006758758" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580320021" value="1" />
+          </node>
+          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6160919716006758759" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006758760" nodeInfo="nn">
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.9011524070498474493" resolveInfo="matchSuperclass" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6160919716006758761" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006758762" nodeInfo="nn">
+                  <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593409" resolveInfo="Comparable&lt;int&gt;" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6160919716006758763" nodeInfo="nn">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="kxga.3845071462880166264" />
+                </node>
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006764217" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593409" resolveInfo="Comparable&lt;int&gt;" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetSizeOperation" typeId="tp2q.1162935959151" id="6160919716006758765" nodeInfo="nn" />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tp5g.AssertMatch" typeId="tp5g.1211979288880" id="6160919716006758766" nodeInfo="nn">
+          <node role="before" roleId="tp5g.1211979305365" type="tp2q.ListElementAccessExpression" typeId="tp2q.1225711141656" id="6160919716006758767" nodeInfo="nn">
+            <node role="index" roleId="tp2q.1225711191269" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6160919716006758768" nodeInfo="nn">
+              <property name="value" nameId="tpee.1068580320021" value="0" />
+            </node>
+            <node role="list" roleId="tp2q.1225711182005" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006758769" nodeInfo="nn">
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.9011524070498474493" resolveInfo="matchSuperclass" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6160919716006758770" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006758771" nodeInfo="nn">
+                  <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593409" resolveInfo="Comparable&lt;int&gt;" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6160919716006758772" nodeInfo="nn">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="kxga.3845071462880166264" />
+                </node>
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006770244" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593409" resolveInfo="Comparable&lt;int&gt;" />
+              </node>
+            </node>
+          </node>
+          <node role="after" roleId="tp5g.1211979322383" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="6160919716006758774" nodeInfo="nn">
+            <node role="leftExpression" roleId="tp25.1145404616321" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006770680" nodeInfo="nn">
+              <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593413" resolveInfo="int" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6160919716006813573" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="6160919716006818179" nodeInfo="nn">
+          <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6160919716006818180" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580320021" value="1" />
+          </node>
+          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6160919716006818181" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006818182" nodeInfo="nn">
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.9011524070498474493" resolveInfo="matchSuperclass" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6160919716006818183" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006818184" nodeInfo="nn">
+                  <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593409" resolveInfo="Comparable&lt;int&gt;" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6160919716006818185" nodeInfo="nn">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="kxga.3845071462880166264" />
+                </node>
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006825165" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593411" resolveInfo="Comparable&lt;Fraction&gt;" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetSizeOperation" typeId="tp2q.1162935959151" id="6160919716006818187" nodeInfo="nn" />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tp5g.AssertMatch" typeId="tp5g.1211979288880" id="6160919716006818188" nodeInfo="nn">
+          <node role="before" roleId="tp5g.1211979305365" type="tp2q.ListElementAccessExpression" typeId="tp2q.1225711141656" id="6160919716006818189" nodeInfo="nn">
+            <node role="index" roleId="tp2q.1225711191269" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6160919716006818190" nodeInfo="nn">
+              <property name="value" nameId="tpee.1068580320021" value="0" />
+            </node>
+            <node role="list" roleId="tp2q.1225711182005" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006818191" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.9011524070498474493" resolveInfo="matchSuperclass" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6160919716006818192" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006818193" nodeInfo="nn">
+                  <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593409" resolveInfo="Comparable&lt;int&gt;" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6160919716006818194" nodeInfo="nn">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="kxga.3845071462880166264" />
+                </node>
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006825657" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593411" resolveInfo="Comparable&lt;Fraction&gt;" />
+              </node>
+            </node>
+          </node>
+          <node role="after" roleId="tp5g.1211979322383" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="6160919716006818196" nodeInfo="nn">
+            <node role="leftExpression" roleId="tp25.1145404616321" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006818197" nodeInfo="nn">
+              <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593389" resolveInfo="Fraction" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6160919716006815464" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertIsNull" typeId="tpe3.1172028177041" id="6160919716006609490" nodeInfo="nn">
+          <node role="expression" roleId="tpe3.1172028236559" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006610286" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.9011524070498474493" resolveInfo="matchSuperclass" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6160919716006681192" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006680597" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593409" resolveInfo="Comparable&lt;int&gt;" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6160919716006686190" nodeInfo="nn">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="kxga.3845071462880166264" />
+              </node>
+            </node>
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006686683" nodeInfo="nn">
+              <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593413" resolveInfo="int" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6160919716006801482" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertIsNull" typeId="tpe3.1172028177041" id="6160919716006756895" nodeInfo="nn">
+          <node role="expression" roleId="tpe3.1172028236559" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006756896" nodeInfo="nn">
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.9011524070498474493" resolveInfo="matchSuperclass" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6160919716006756897" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006756898" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593409" resolveInfo="Comparable&lt;int&gt;" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6160919716006756899" nodeInfo="nn">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="kxga.3845071462880166264" />
+              </node>
+            </node>
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006758451" nodeInfo="nn">
+              <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593415" resolveInfo="NonComparableClass" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6160919716006804217" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="6160919716006774857" nodeInfo="nn">
+          <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6160919716006774858" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580320021" value="1" />
+          </node>
+          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6160919716006774859" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006774860" nodeInfo="nn">
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.9011524070498474493" resolveInfo="matchSuperclass" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6160919716006774861" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006774862" nodeInfo="nn">
+                  <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593409" resolveInfo="Comparable&lt;int&gt;" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6160919716006774863" nodeInfo="nn">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="kxga.3845071462880166264" />
+                </node>
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006777672" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593417" resolveInfo="FractionSubclass" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetSizeOperation" typeId="tp2q.1162935959151" id="6160919716006774865" nodeInfo="nn" />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tp5g.AssertMatch" typeId="tp5g.1211979288880" id="6160919716006774866" nodeInfo="nn">
+          <node role="before" roleId="tp5g.1211979305365" type="tp2q.ListElementAccessExpression" typeId="tp2q.1225711141656" id="6160919716006774867" nodeInfo="nn">
+            <node role="index" roleId="tp2q.1225711191269" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6160919716006774868" nodeInfo="nn">
+              <property name="value" nameId="tpee.1068580320021" value="0" />
+            </node>
+            <node role="list" roleId="tp2q.1225711182005" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006774869" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.9011524070498474493" resolveInfo="matchSuperclass" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6160919716006774870" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006774871" nodeInfo="nn">
+                  <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593409" resolveInfo="Comparable&lt;int&gt;" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6160919716006774872" nodeInfo="nn">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="kxga.3845071462880166264" />
+                </node>
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006778244" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593417" resolveInfo="FractionSubclass" />
+              </node>
+            </node>
+          </node>
+          <node role="after" roleId="tp5g.1211979322383" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="6160919716006774874" nodeInfo="nn">
+            <node role="leftExpression" roleId="tp25.1145404616321" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006774875" nodeInfo="nn">
+              <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593389" resolveInfo="Fraction" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="6160919716006807387" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="testCyclicSuperclassParameterMatching" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="6160919716006807388" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6160919716006807392" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="6160919716006807835" nodeInfo="nn">
+          <node role="expected" roleId="tpe3.8427750732757990724" type="esj9.TemplateMappingLiteral" typeId="esj9.6520792433189547829" id="6160919716006807841" nodeInfo="ng">
+            <node role="mapping" roleId="esj9.6520792433189547881" type="esj9.TemplateMappingEntry" typeId="esj9.6520792433189568176" id="6160919716006807850" nodeInfo="ng">
+              <node role="param" roleId="esj9.6520792433189568179" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006807862" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006592434" resolveInfo="T" />
+              </node>
+              <node role="arg" roleId="esj9.6520792433189568181" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006807870" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593389" resolveInfo="Fraction" />
+              </node>
+            </node>
+          </node>
+          <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006807934" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.6581083602200995584" resolveInfo="matchParam" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006808077" nodeInfo="nn">
+              <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006592434" resolveInfo="T" />
+            </node>
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006808527" nodeInfo="nn">
+              <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593389" resolveInfo="Fraction" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6160919716006809478" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006809635" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="elhg.7911539744506183882" resolveInfo="assertTemplateMappingInvalid" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="elhg.7911539744506147552" resolveInfo="TestingUtil" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006809861" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.6581083602200995584" resolveInfo="matchParam" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006809945" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006592434" resolveInfo="T" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006810364" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593413" resolveInfo="int" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6160919716006810554" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006810555" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="elhg.7911539744506183882" resolveInfo="assertTemplateMappingInvalid" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="elhg.7911539744506147552" resolveInfo="TestingUtil" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006810556" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.6581083602200995584" resolveInfo="matchParam" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006810557" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006592434" resolveInfo="T" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006813412" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593409" resolveInfo="Comparable&lt;int&gt;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6160919716006811011" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006811012" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="elhg.7911539744506183882" resolveInfo="assertTemplateMappingInvalid" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="elhg.7911539744506147552" resolveInfo="TestingUtil" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006811013" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.6581083602200995584" resolveInfo="matchParam" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006811014" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006592434" resolveInfo="T" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006826016" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593411" resolveInfo="Comparable&lt;Fraction&gt;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6160919716006811678" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006811679" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="elhg.7911539744506183882" resolveInfo="assertTemplateMappingInvalid" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="elhg.7911539744506147552" resolveInfo="TestingUtil" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006811680" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.6581083602200995584" resolveInfo="matchParam" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006811681" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006592434" resolveInfo="T" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006826423" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593415" resolveInfo="NonComparableClass" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6160919716006812474" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006812475" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="elhg.7911539744506183882" resolveInfo="assertTemplateMappingInvalid" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="elhg.7911539744506147552" resolveInfo="TestingUtil" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6160919716006812476" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jfct.6581083602200995584" resolveInfo="matchParam" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jfct.6581083602200516580" resolveInfo="KTemplates" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006812477" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006592434" resolveInfo="T" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="6160919716006826558" nodeInfo="nn">
+                <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="6160919716006593417" resolveInfo="FractionSubclass" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="6160919716006590438" nodeInfo="ng">
+      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="kxga.KFile" typeId="kxga.7186792080061303046" id="6160919716006590440" nodeInfo="ng">
+        <node role="root" roleId="kxga.7186792080061303320" type="kxga.KAlgoDecl" typeId="kxga.3758043149216555079" id="6160919716006592418" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="testCompare" />
+          <node role="procedure" roleId="kxga.3758043149216555080" type="kxga.KStmtList" typeId="kxga.7186792080059188918" id="6160919716006592420" nodeInfo="ng" />
+          <node role="templateType" roleId="kxga.8402241218903703555" type="kxga.KTemplateTypeDecl" typeId="kxga.8402241218903700347" id="6160919716006592424" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="T" />
+            <node role="superclass" roleId="kxga.9011524070498364559" type="kxga.KClassType" typeId="kxga.3845071462880165951" id="6160919716006592428" nodeInfo="ng">
+              <link role="class" roleId="kxga.3845071462880166264" targetNodeId="6581083602207083055" resolveInfo="Comparable" />
+              <node role="typeArg" roleId="kxga.3845071462849156798" type="kxga.KTemplateType" typeId="kxga.3845071462882401446" id="6160919716006592432" nodeInfo="ng">
+                <link role="decl" roleId="kxga.3845071462882401447" targetNodeId="6160919716006592424" resolveInfo="T" />
+              </node>
+            </node>
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="6160919716006592434" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="T" />
+            </node>
+          </node>
+        </node>
+        <node role="root" roleId="kxga.7186792080061303320" type="kxga.KPlaceholderRoot" typeId="kxga.6811099674943404881" id="6160919716006593229" nodeInfo="ng" />
+        <node role="root" roleId="kxga.7186792080061303320" type="kxga.KClassTypeDecl" typeId="kxga.7186792080060709047" id="6160919716006593262" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="NonComparableClass" />
+          <node role="member" roleId="kxga.8402241218903689858" type="kxga.KPlaceholderClassMember" typeId="kxga.6811099674943424796" id="6160919716006593298" nodeInfo="ng" />
+        </node>
+        <node role="root" roleId="kxga.7186792080061303320" type="kxga.KPlaceholderRoot" typeId="kxga.6811099674943404881" id="6160919716006593302" nodeInfo="ng" />
+        <node role="root" roleId="kxga.7186792080061303320" type="kxga.KClassTypeDecl" typeId="kxga.7186792080060709047" id="6160919716006593343" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="FractionSubclass" />
+          <node role="member" roleId="kxga.8402241218903689858" type="kxga.KPlaceholderClassMember" typeId="kxga.6811099674943424796" id="6160919716006593369" nodeInfo="ng" />
+          <node role="baseClass" roleId="kxga.7186792080061804610" type="kxga.KClassType" typeId="kxga.3845071462880165951" id="6160919716006593367" nodeInfo="ng">
+            <link role="class" roleId="kxga.3845071462880166264" targetNodeId="6581083602207902445" resolveInfo="Fraction" />
+          </node>
+        </node>
+        <node role="root" roleId="kxga.7186792080061303320" type="kxga.KPlaceholderRoot" typeId="kxga.6811099674943404881" id="6160919716006593157" nodeInfo="ng" />
+        <node role="root" roleId="kxga.7186792080061303320" type="kxga.KTraitDecl" typeId="kxga.8402241218907284142" id="6160919716006593174" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="testNodes_4" />
+          <node role="satisfiedBy" roleId="kxga.8402241218907284750" type="kxga.KClassType" typeId="kxga.3845071462880165951" id="6160919716006593187" nodeInfo="ng">
+            <link role="class" roleId="kxga.3845071462880166264" targetNodeId="6581083602207902445" resolveInfo="Fraction" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="6160919716006593389" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="Fraction" />
+            </node>
+          </node>
+          <node role="satisfiedBy" roleId="kxga.8402241218907284750" type="kxga.KClassType" typeId="kxga.3845071462880165951" id="6160919716006593192" nodeInfo="ng">
+            <link role="class" roleId="kxga.3845071462880166264" targetNodeId="6581083602207083055" resolveInfo="Comparable" />
+            <node role="typeArg" roleId="kxga.3845071462849156798" type="kxga.KIntType" typeId="kxga.7186792080057675401" id="6160919716006593197" nodeInfo="ng" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="6160919716006593409" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="Comparable&lt;int&gt;" />
+            </node>
+          </node>
+          <node role="satisfiedBy" roleId="kxga.8402241218907284750" type="kxga.KClassType" typeId="kxga.3845071462880165951" id="6160919716006593205" nodeInfo="ng">
+            <link role="class" roleId="kxga.3845071462880166264" targetNodeId="6581083602207083055" resolveInfo="Comparable" />
+            <node role="typeArg" roleId="kxga.3845071462849156798" type="kxga.KClassType" typeId="kxga.3845071462880165951" id="6160919716006593212" nodeInfo="ng">
+              <link role="class" roleId="kxga.3845071462880166264" targetNodeId="6581083602207902445" resolveInfo="Fraction" />
+            </node>
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="6160919716006593411" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="Comparable&lt;Fraction&gt;" />
+            </node>
+          </node>
+          <node role="satisfiedBy" roleId="kxga.8402241218907284750" type="kxga.KIntType" typeId="kxga.7186792080057675401" id="6160919716006593221" nodeInfo="ng">
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="6160919716006593413" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="int" />
+            </node>
+          </node>
+          <node role="satisfiedBy" roleId="kxga.8402241218907284750" type="kxga.KClassType" typeId="kxga.3845071462880165951" id="6160919716006593290" nodeInfo="ng">
+            <link role="class" roleId="kxga.3845071462880166264" targetNodeId="6160919716006593262" resolveInfo="NonComparableClass" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="6160919716006593415" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="NonComparableClass" />
+            </node>
+          </node>
+          <node role="satisfiedBy" roleId="kxga.8402241218907284750" type="kxga.KClassType" typeId="kxga.3845071462880165951" id="6160919716006593380" nodeInfo="ng">
+            <link role="class" roleId="kxga.3845071462880166264" targetNodeId="6160919716006593343" resolveInfo="FractionSubclass" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="6160919716006593417" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="FractionSubclass" />
             </node>
           </node>
         </node>
