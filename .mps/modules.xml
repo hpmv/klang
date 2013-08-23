@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/languages/KLang/runtime/KLang.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/KLang/sandbox/KLang.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/KLangTestUtils/KLangTestUtils.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/KLangUtils/KLangUtils.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/KLang.tests/KLang.tests.msd" folder="" />
     </projectModules>
   </component>
