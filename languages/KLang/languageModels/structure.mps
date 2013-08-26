@@ -1168,6 +1168,7 @@
       <property name="role" nameId="tpce.1071599776563" value="decl" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="7186792080060709820" resolveInfo="KNamedFuncDecl" />
+      <link role="specializedLink" roleId="tpce.1071599698500" targetNodeId="4378088126680486956" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9011524070489249219" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="9011524070489241678" resolveInfo="KFuncCall" />
@@ -1370,20 +1371,30 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9011524070488745483" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="kOperation" />
-    <property name="name" nameId="tpck.1169194664001" value="KMemberFuncCallOp" />
+    <property name="name" nameId="tpck.1169194664001" value="KInstanceMemberFuncCallOp" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3845071462856847298" resolveInfo="KOperation" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9011524070488788388" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="decl" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7186792080061029749" resolveInfo="KMemberFuncDecl" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7186792080060709836" resolveInfo="KInstanceMemberFuncDecl" />
+      <link role="specializedLink" roleId="tpce.1071599698500" targetNodeId="4378088126680486956" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9011524070489534256" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="9011524070489241678" resolveInfo="KFuncCall" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4378088126683960835" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
+    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="9011524070489241678" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="KFuncCall" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4378088126680486956" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="decl" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7186792080060709823" resolveInfo="KFuncDecl" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9011524070489241679" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="arg" />

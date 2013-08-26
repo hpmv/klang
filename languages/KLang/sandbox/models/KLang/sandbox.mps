@@ -241,11 +241,8 @@
         <property name="name" nameId="tpck.1169194664001" value="compare" />
         <node role="param" roleId="kxga.4653407572361688304" type="kxga.KTypedParamVarDecl" typeId="kxga.7186792080060710047" id="7911539744514863679" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="other" />
-          <node role="type" roleId="kxga.4653407572359933488" type="kxga.KClassType" typeId="kxga.3845071462880165951" id="7911539744514863687" nodeInfo="ng">
-            <link role="class" roleId="kxga.3845071462880166264" targetNodeId="7911539744514863409" resolveInfo="Comparable" />
-            <node role="typeArg" roleId="kxga.3845071462849156798" type="kxga.KTemplateType" typeId="kxga.3845071462882401446" id="7911539744514863705" nodeInfo="ng">
-              <link role="decl" roleId="kxga.3845071462882401447" targetNodeId="7911539744514863657" resolveInfo="T" />
-            </node>
+          <node role="type" roleId="kxga.4653407572359933488" type="kxga.KTemplateType" typeId="kxga.3845071462882401446" id="4378088126679903339" nodeInfo="ng">
+            <link role="decl" roleId="kxga.3845071462882401447" targetNodeId="7911539744514863657" resolveInfo="T" />
           </node>
         </node>
         <node role="body" roleId="kxga.4653407572361688306" type="kxga.KStmtList" typeId="kxga.7186792080059188918" id="7911539744514863672" nodeInfo="ng" />
@@ -549,14 +546,14 @@
           <property name="value" nameId="kxga.7186792080058926555" value="0" />
         </node>
         <node role="left" roleId="kxga.7186792080058583690" type="kxga.KDotExpr" typeId="kxga.3845071462856847283" id="7911539744514863948" nodeInfo="ng">
-          <node role="operation" roleId="kxga.3845071462856847287" type="kxga.KMemberFuncCallOp" typeId="kxga.9011524070488745483" id="9011524070491372777" nodeInfo="ng">
+          <node role="operand" roleId="kxga.3845071462856847284" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="4378088126679903835" nodeInfo="ng">
+            <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="7911539744514862908" resolveInfo="a" />
+          </node>
+          <node role="operation" roleId="kxga.3845071462856847287" type="kxga.KInstanceMemberFuncCallOp" typeId="kxga.9011524070488745483" id="4378088126679903441" nodeInfo="ng">
             <link role="decl" roleId="kxga.9011524070488788388" targetNodeId="7911539744514863670" resolveInfo="compare" />
-            <node role="arg" roleId="kxga.9011524070489241679" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="9011524070491372787" nodeInfo="ng">
+            <node role="arg" roleId="kxga.9011524070489241679" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="4378088126679903457" nodeInfo="ng">
               <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="7911539744514863825" resolveInfo="b" />
             </node>
-          </node>
-          <node role="operand" roleId="kxga.3845071462856847284" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="7911539744514863873" nodeInfo="ng">
-            <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="7911539744514862908" resolveInfo="a" />
           </node>
         </node>
       </node>
@@ -706,14 +703,14 @@
             </node>
           </node>
           <node role="condition" roleId="kxga.7186792080059614371" type="kxga.KLessThanExpr" typeId="kxga.7186792080058924083" id="7911539744511339594" nodeInfo="ng">
-            <node role="right" roleId="kxga.7186792080058583692" type="kxga.KDotExpr" typeId="kxga.3845071462856847283" id="7911539744511339985" nodeInfo="ng">
-              <node role="operation" roleId="kxga.3845071462856847287" type="kxga.KArrayLengthOp" typeId="kxga.3845071462868729597" id="7911539744511340072" nodeInfo="ng" />
-              <node role="operand" roleId="kxga.3845071462856847284" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="7911539744511339874" nodeInfo="ng">
-                <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="3845071462856690228" resolveInfo="container" />
-              </node>
-            </node>
             <node role="left" roleId="kxga.7186792080058583690" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="7911539744511339560" nodeInfo="ng">
               <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="7911539744510956119" resolveInfo="i" />
+            </node>
+            <node role="right" roleId="kxga.7186792080058583692" type="kxga.KDotExpr" typeId="kxga.3845071462856847283" id="4378088126684823832" nodeInfo="ng">
+              <node role="operation" roleId="kxga.3845071462856847287" type="kxga.KArrayLengthOp" typeId="kxga.3845071462868729597" id="4378088126684824085" nodeInfo="ng" />
+              <node role="operand" roleId="kxga.3845071462856847284" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="4378088126684823507" nodeInfo="ng">
+                <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="3845071462856690228" resolveInfo="container" />
+              </node>
             </node>
           </node>
           <node role="iteration" roleId="kxga.7186792080059614374" type="kxga.KPostIncrementExpr" typeId="kxga.7186792080058925708" id="9011524070492566548" nodeInfo="ng">
@@ -763,24 +760,16 @@
       <node role="procedure" roleId="kxga.3758043149216555080" type="kxga.KStmtList" typeId="kxga.7186792080059188918" id="9011524070492564384" nodeInfo="ng">
         <node role="stmt" roleId="kxga.7186792080059188919" type="kxga.KExprStmt" typeId="kxga.7186792080058935473" id="9011524070492565077" nodeInfo="ng">
           <node role="expr" roleId="kxga.7186792080058935474" type="kxga.KAssignExpr" typeId="kxga.8402241218901047129" id="9011524070492565116" nodeInfo="ng">
-            <node role="right" roleId="kxga.7186792080058583692" type="kxga.KDotExpr" typeId="kxga.3845071462856847283" id="9011524070492565270" nodeInfo="ng">
-              <node role="operation" roleId="kxga.3845071462856847287" type="kxga.KMemberFuncCallOp" typeId="kxga.9011524070488745483" id="9011524070492565313" nodeInfo="ng">
-                <link role="decl" roleId="kxga.9011524070488788388" targetNodeId="3845071462864937972" resolveInfo="get" />
-                <node role="arg" roleId="kxga.9011524070489241679" type="kxga.KAssignExpr" typeId="kxga.8402241218901047129" id="9011524070492565425" nodeInfo="ng">
-                  <node role="right" roleId="kxga.7186792080058583692" type="kxga.KIntLiteral" typeId="kxga.7186792080058926040" id="9011524070492565428" nodeInfo="ng">
-                    <property name="value" nameId="kxga.7186792080058926555" value="0" />
-                  </node>
-                  <node role="left" roleId="kxga.7186792080058583690" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="9011524070492565351" nodeInfo="ng">
-                    <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="9011524070492565057" resolveInfo="maxi" />
-                  </node>
-                </node>
-              </node>
-              <node role="operand" roleId="kxga.3845071462856847284" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="9011524070492565135" nodeInfo="ng">
-                <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="9011524070492564667" resolveInfo="container" />
-              </node>
-            </node>
             <node role="left" roleId="kxga.7186792080058583690" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="9011524070492565076" nodeInfo="ng">
               <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="9011524070492565059" resolveInfo="maxv" />
+            </node>
+            <node role="right" roleId="kxga.7186792080058583692" type="kxga.KDotExpr" typeId="kxga.3845071462856847283" id="4378088126674678060" nodeInfo="ng">
+              <node role="operation" roleId="kxga.3845071462856847287" type="kxga.KInstanceMemberFuncCallOp" typeId="kxga.9011524070488745483" id="4378088126677867316" nodeInfo="ng">
+                <link role="decl" roleId="kxga.9011524070488788388" targetNodeId="3845071462864937972" resolveInfo="get" />
+              </node>
+              <node role="operand" roleId="kxga.3845071462856847284" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="4378088126674677927" nodeInfo="ng">
+                <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="9011524070492564667" resolveInfo="container" />
+              </node>
             </node>
           </node>
         </node>
@@ -791,14 +780,14 @@
                 <node role="decl" roleId="kxga.7186792080061857071" type="kxga.KImplicitVarDecl" typeId="kxga.7186792080061856181" id="9011524070492567432" nodeInfo="ng">
                   <property name="name" nameId="tpck.1169194664001" value="e" />
                   <node role="initializer" roleId="kxga.7186792080061856015" type="kxga.KDotExpr" typeId="kxga.3845071462856847283" id="9011524070492567536" nodeInfo="ng">
-                    <node role="operation" roleId="kxga.3845071462856847287" type="kxga.KMemberFuncCallOp" typeId="kxga.9011524070488745483" id="9011524070492567699" nodeInfo="ng">
-                      <link role="decl" roleId="kxga.9011524070488788388" targetNodeId="3845071462864937972" resolveInfo="get" />
-                      <node role="arg" roleId="kxga.9011524070489241679" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="9011524070492567857" nodeInfo="ng">
-                        <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="9011524070492565520" resolveInfo="i" />
-                      </node>
-                    </node>
                     <node role="operand" roleId="kxga.3845071462856847284" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="9011524070492567451" nodeInfo="ng">
                       <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="9011524070492564667" resolveInfo="container" />
+                    </node>
+                    <node role="operation" roleId="kxga.3845071462856847287" type="kxga.KInstanceMemberFuncCallOp" typeId="kxga.9011524070488745483" id="4378088126674677617" nodeInfo="ng">
+                      <link role="decl" roleId="kxga.9011524070488788388" targetNodeId="3845071462864937972" resolveInfo="get" />
+                      <node role="arg" roleId="kxga.9011524070489241679" type="kxga.KIntLiteral" typeId="kxga.7186792080058926040" id="4378088126674677663" nodeInfo="ng">
+                        <property name="value" nameId="kxga.7186792080058926555" value="0" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -851,11 +840,11 @@
               <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="9011524070492565520" resolveInfo="i" />
             </node>
             <node role="right" roleId="kxga.7186792080058583692" type="kxga.KDotExpr" typeId="kxga.3845071462856847283" id="9011524070492566159" nodeInfo="ng">
-              <node role="operation" roleId="kxga.3845071462856847287" type="kxga.KMemberFuncCallOp" typeId="kxga.9011524070488745483" id="9011524070492566166" nodeInfo="ng">
-                <link role="decl" roleId="kxga.9011524070488788388" targetNodeId="9011524070492566079" resolveInfo="size" />
-              </node>
               <node role="operand" roleId="kxga.3845071462856847284" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="9011524070492565988" nodeInfo="ng">
                 <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="9011524070492564667" resolveInfo="container" />
+              </node>
+              <node role="operation" roleId="kxga.3845071462856847287" type="kxga.KInstanceMemberFuncCallOp" typeId="kxga.9011524070488745483" id="4378088126684824806" nodeInfo="ng">
+                <link role="decl" roleId="kxga.9011524070488788388" targetNodeId="9011524070492566079" resolveInfo="size" />
               </node>
             </node>
           </node>
