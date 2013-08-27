@@ -766,6 +766,9 @@
             <node role="right" roleId="kxga.7186792080058583692" type="kxga.KDotExpr" typeId="kxga.3845071462856847283" id="4378088126674678060" nodeInfo="ng">
               <node role="operation" roleId="kxga.3845071462856847287" type="kxga.KInstanceMemberFuncCallOp" typeId="kxga.9011524070488745483" id="4378088126677867316" nodeInfo="ng">
                 <link role="decl" roleId="kxga.9011524070488788388" targetNodeId="3845071462864937972" resolveInfo="get" />
+                <node role="arg" roleId="kxga.9011524070489241679" type="kxga.KIntLiteral" typeId="kxga.7186792080058926040" id="4226612279480249693" nodeInfo="ng">
+                  <property name="value" nameId="kxga.7186792080058926555" value="0" />
+                </node>
               </node>
               <node role="operand" roleId="kxga.3845071462856847284" type="kxga.KVarRef" typeId="kxga.7186792080057677317" id="4378088126674677927" nodeInfo="ng">
                 <link role="decl" roleId="kxga.7186792080057677318" targetNodeId="9011524070492564667" resolveInfo="container" />
